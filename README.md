@@ -1,14 +1,16 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+Make a todo list in just a few simple clicks. 
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+By clicking the "add todo" in the top right corner, you can crate a list of todo items. You can set action and the date so you can be organzised in all of your upcoming tasks. All of the buttons are responsive and the form fields validated so you can not sumbit a todo that is not ideal. 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+HTML
+CSS
+Javascript
 
 ## Deployment
 
