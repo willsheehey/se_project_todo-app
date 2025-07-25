@@ -14,7 +14,6 @@ class PopupWithForm extends Popup {
       if (input.name) {
         inputValues[input.name] = input.value;
       }
-      console.log(inputValues);
     });
     return inputValues;
   }

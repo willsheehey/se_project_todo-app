@@ -26,6 +26,12 @@ this._popupCloseBtn.addEventListener("click", () => {
     this.close();
 });
 
+ this._popupElement.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("popup")) {
+    this.close();
+    };
+});
+
 }
 
 }
