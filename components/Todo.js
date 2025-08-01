@@ -8,15 +8,15 @@ class Todo {
 
   _setEventListener() {
     this._todoCheckboxEl.addEventListener("change", () => {
-       const wasCompleted = this._data.completed;
-    this._data.completed = !wasCompleted;
-    this._handleCheck(!wasCompleted);
+      const wasCompleted = this._data.completed;
+      this._data.completed = !wasCompleted;
+      this._handleCheck(!wasCompleted);
     });
 
     this._todoDeleteBtn.addEventListener("click", () => {
       const wasCompleted = this._data.completed;
-    this._todoElement.remove();
-    this._handleDelete(wasCompleted);
+      this._todoElement.remove();
+      this._handleDelete(wasCompleted);
     });
   }
 
@@ -32,11 +32,14 @@ class Todo {
   _generateDate() {
     this._dueDate = new Date(this._data.date);
     if (!isNaN(this._dueDate)) {
-     this._todoDate.textContent = `Due: ${this._dueDate.toLocaleString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      })}`;
+      this._todoDate.textContent = `Due: ${this._dueDate.toLocaleString(
+        "en-US",
+        {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        }
+      )}`;
     }
   }
 
